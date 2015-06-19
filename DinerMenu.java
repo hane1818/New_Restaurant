@@ -5,6 +5,7 @@ import plfinal.MenuItem;
 public class DinerMenu {
     public static final int MAX_ITEMS = 6;
     private MenuItem[] menuItems;
+    private int totalMenuItems = 0;
 
     public DinerMenu() {
         menuItems = new MenuItem[MAX_ITEMS];
@@ -19,7 +20,8 @@ public class DinerMenu {
 
     public void addItem(String name, String description, boolean vegetarian, double price){
         MenuItem mi = new MenuItem(name, description, vegetarian, price);
-        menuItems[menuItems.length-1] = mi;
+        menuItems[totalMenuItems] = mi;
+        totalMenuItems += 1;
     }
 
     public MenuItem[] getMenuItems(){
