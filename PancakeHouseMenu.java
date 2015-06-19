@@ -23,6 +23,10 @@ public class PancakeHouseMenu {
         return menuItems;
     }
 
+    public Iterator createIterator(){
+        return new PancakeHouseMenuIterator(this);
+    }
+
     public static void main(String[] args) {
         PancakeHouseMenu p = new PancakeHouseMenu();
 
