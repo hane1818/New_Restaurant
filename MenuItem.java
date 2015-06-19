@@ -38,6 +38,10 @@ public class MenuItem {
 
     public static void main(String[] args) {
         MenuItem menu = new MenuItem("Tomato Soup", "Use steamed tomato to cook.", true, 150);
+        System.out.println("Menu Name : " + menu.getName());
+        System.out.println("Menu Description : " + menu.getDescription());
+        System.out.println("For vegetarian : " + menu.isVegetarian());
+        System.out.println("How much : " + menu.getPrice());
         menu.print();
     }
 }
