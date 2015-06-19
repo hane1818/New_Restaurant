@@ -1,6 +1,6 @@
-package plfinal
+package plfinal;
 
-import plfinal.MenuItem
+import plfinal.MenuItem;
 
 public class DinerMenu {
     public static final int MAX_ITEMS = 6;
@@ -16,4 +16,14 @@ public class DinerMenu {
         addItem("Steamed Veggies and Brown Rice", "Steamed vegetables over brown rice", true, 3.99);
         addItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", false, 3.89);
     }
+
+    public void addItem(String name, String description, boolean vegetarian, double price){
+        MenuItem mi = new MenuItem(name, description, vegetarian, price);
+        menuItems[menuItems.length-1] = mi;
+    }
+
+    public MenuItem[] getMenuItems(){
+        return menuItems;
+    }
+
 }
