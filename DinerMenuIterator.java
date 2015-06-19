@@ -1,8 +1,12 @@
 package plfinal;
 
 public class DinerMenuIterator implements Iterator {
-    private DinerMenu dinerMenu = new DinerMenu();
+    private DinerMenu dinerMenu;
     private int index = 0;
+
+    public DinerMenuIterator(DinerMenu dinerMenu){
+        this.dinerMenu = dinerMenu;
+    }
 
     public boolean hasNext(){
         if(index < dinerMenu.getMenuItems().length)
