@@ -26,6 +26,10 @@ public class DinerMenu {
         return menuItems;
     }
 
+    public Iterator createIterator(){
+        return new DinerMenuIterator(this);
+    }
+
     public static void main(String[] args) {
         DinerMenu d = new DinerMenu();
 
