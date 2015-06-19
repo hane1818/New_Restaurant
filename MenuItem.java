@@ -1,3 +1,5 @@
+package PL_FP;
+
 public class MenuItem {
     private String name;
     private String description;
