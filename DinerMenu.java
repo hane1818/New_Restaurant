@@ -1,7 +1,5 @@
 package plfinal;
 
-import plfinal.MenuItem;
-
 public class DinerMenu {
     public static final int MAX_ITEMS = 6;
     private MenuItem[] menuItems;
