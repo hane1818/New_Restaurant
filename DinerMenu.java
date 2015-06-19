@@ -26,4 +26,12 @@ public class DinerMenu {
         return menuItems;
     }
 
+    public static void main(String[] args) {
+        DinerMenu d = new DinerMenu();
+
+        for(MenuItem m : d.getMenuItems())
+        {
+            m.print();
+        }
+    }
 }
