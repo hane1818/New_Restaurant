@@ -1,13 +1,12 @@
 package plfinal;
 
 import java.util.ArrayList;
-import plfinal.MenuItem;
 
 public class PancakeHouseMenu {
-    private ArrayList  menuItems;
+    private ArrayList<MenuItem>  menuItems;
 
     public PancakeHouseMenu() {
-        menuItems = new ArrayList();
+        menuItems = new ArrayList<MenuItem>();
 
         addItem("K&B's Pancake Breakfast", "Pancakes with scrambled eggs, and toast", true, 2.99);
         addItem("Regular Pancake Breakfast", "Pancakes with fried eggs, sausage", false, 2.99);
@@ -20,7 +19,7 @@ public class PancakeHouseMenu {
         menuItems.add(mi);
     }
 
-    public ArrayList getMenuItems(){
+    public ArrayList<MenuItem> getMenuItems(){
         return menuItems;
     }
 
