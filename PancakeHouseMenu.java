@@ -24,4 +24,12 @@ public class PancakeHouseMenu {
         return menuItems;
     }
 
+    public static void main(String[] args) {
+        PancakeHouseMenu p = new PancakeHouseMenu();
+
+        for(MenuItem m : p.getMenuItems())  //for each loop
+        {
+            m.print();
+        }
+    }
 }
