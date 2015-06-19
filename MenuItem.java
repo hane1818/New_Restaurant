@@ -35,4 +35,9 @@ public class MenuItem {
         System.out.println(", " + price);
         System.out.println("     -- " + description);
     }
+
+    public static void main(String[] args) {
+        MenuItem menu = new MenuItem("Tomato Soup", "Use steamed tomato to cook.", true, 150);
+        menu.print();
+    }
 }
