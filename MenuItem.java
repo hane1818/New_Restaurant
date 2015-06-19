@@ -1,4 +1,4 @@
-package PL_FP;
+package plfinal;
 
 public class MenuItem {
     private String name;
