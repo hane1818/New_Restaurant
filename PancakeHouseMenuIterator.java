@@ -1,4 +1,4 @@
-package plfinal
+package plfinal;
 
 public class PancakeHouseMenuIterator implements Iterator {
     private PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
