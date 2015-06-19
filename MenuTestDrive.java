@@ -11,6 +11,9 @@ public class MenuTestDrive {
         waitress.printVegetarianMenu();
 
         /** Test for WaitressVersion2 */
+        waitress = new WaitressVersion2(pancakeHouseMenu, dinerMenu);
+        waitress.printMenu();
+        waitress.printVegetarianMenu();
 
     }
 }
