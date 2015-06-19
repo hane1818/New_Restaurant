@@ -1,8 +1,12 @@
 package plfinal;
 
 public class PancakeHouseMenuIterator implements Iterator {
-    private PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
+    private PancakeHouseMenu pancakeHouseMenu;
     private int index = 0;
+
+    public PancakeHouseMenuIterator(PancakeHouseMenu pancakeHouseMenu){
+        this.pancakeHouseMenu = pancakeHouseMenu;
+    }
 
     public boolean hasNext(){
         if(index < pancakeHouseMenu.getMenuItems().size())
