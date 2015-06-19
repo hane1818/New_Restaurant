@@ -10,28 +10,35 @@ public class WaitressVersion1 implements Waitress {
     }
 
     public void printMenu(){
+        System.out.println("MENU");
+        System.out.println("----");
         printBreakfastMenu();
         printLunchMenu();
     }
 
     public void printBreakfastMenu()
     {
+        System.out.println("BREAKFAST");
         for(MenuItem m : pancakeHouseMenu.getMenuItems())
         {
             m.print();
         }
+        System.out.println("");
     }
 
     public void printLunchMenu()
     {
+        System.out.println("LUNCH");
         for(MenuItem m : dinerMenu.getMenuItems())
         {
             m.print();
         }
+        System.out.println("");
     }
 
     public void printVegetarianMenu()
     {
+        System.out.println("FOR VEGETARIAN");
         for(MenuItem m : pancakeHouseMenu.getMenuItems())
         {
             if(isItemVegetarian(m.getName()))
@@ -47,6 +54,7 @@ public class WaitressVersion1 implements Waitress {
                 m.print();
             }
         }
+        System.out.println("");
     }
 
     public boolean isItemVegetarian(String name)
