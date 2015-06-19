@@ -35,7 +35,7 @@ public class WaitressVersion1 implements Waitress {
 
     public void printVegetarianMenu()
     {
-        for(MenuItem m : pancakeHouseMenu)
+        for(MenuItem m : pancakeHouseMenu.getMenuItems())
         {
             if(isItemVegetarian(m.getName()))
             {
@@ -43,7 +43,7 @@ public class WaitressVersion1 implements Waitress {
             }
         }
 
-        for(MenuItem m : dinerMenu)
+        for(MenuItem m : dinerMenu.getMenuItems())
         {
             if(isItemVegetarian(m.getName()))
             {
@@ -54,7 +54,7 @@ public class WaitressVersion1 implements Waitress {
 
     public boolean isItemVegetarian(String name)
     {
-        for(MenuItem m : pancakeHouseMenu)
+        for(MenuItem m : pancakeHouseMenu.getMenuItems())
         {
             if(name.equals(m.getName()) && m.isVegetarian())
             {
@@ -62,7 +62,7 @@ public class WaitressVersion1 implements Waitress {
             }
         }
 
-        for(MenuItem m : dinerMenu)
+        for(MenuItem m : dinerMenu.getMenuItems())
         {
             if(name.equals(m.getName()) && m.isVegetarian())
             {
