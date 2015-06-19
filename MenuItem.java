@@ -1,12 +1,12 @@
 public class MenuItem {
     private String name;
-    private String desciption;
+    private String description;
     private boolean vegetarian;
     private double price;
 
-    public MenuItem(String name, String desciption, boolean vegetarian, double price) {
+    public MenuItem(String name, String description, boolean vegetarian, double price) {
         this.name = name;
-        this.desciption = desciption;
+        this.description = description;
         this.vegetarian = vegetarian;
         this.price = price;
     }
@@ -16,7 +16,7 @@ public class MenuItem {
     }
 
     public String getDescription(){
-        return desciption;
+        return description;
     }
 
     public boolean isVegetarian(){
